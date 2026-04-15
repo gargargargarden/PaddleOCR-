@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/OCRFastPoint"/>
+    <qresource prefix="/new/prefix1">
+        <file>img/Exit.jpg</file>
+        <file>img/left.jpg</file>
+        <file>img/right.jpg</file>
+        <file>img/twoway.jpg</file>
+        <file>img/embedLeft.jpg</file>
+        <file>img/embedRight.jpg</file>
+        <file>img/embedTwoway.jpg</file>
+        <file>img/message.png</file>
+        <file>img/key.png</file>
+        <file>img/project.png</file>
+        <file>img/light2.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebugInfo|x64">
+      <Configuration>RelWithDebugInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4B475B2B-535C-45FC-BA53-DDFCA4AF4862}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)'=='RelWithDebugInfo|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebugInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.12.5_msvc2017_64</QtInstall>
+    <QtModules>core;sql;network;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.12.5_msvc2017_64</QtInstall>
+    <QtModules>core;sql;network;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="QtSettings">
+    <QtInstall>5.15.2_msvc2019_64</QtInstall>
+    <QtModules>core;sql;network;gui;axcontainer;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebugInfo|x64'" Label="QtSettings">
+    <QtInstall>5.12.5_msvc2017_64</QtInstall>
+    <QtModules>core;network;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebugInfo|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebugInfo|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.\..\3rdparty\paddle_inference_install_dir\paddle\fluid\inference;.\..\3rdparty\paddle_inference_install_dir\paddle\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\protobuf\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\glog\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\gflags\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\xxhash\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\zlib\include;.\..\3rdparty\paddle_inference_install_dir\third_party\boost;.\..\3rdparty\paddle_inference_install_dir\third_party\eigen3;.\..\3rdparty\paddle_inference_install_dir\third_party\install\mklml\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\mkldnn\include;.\..\3rdparty\opencv\include;debug;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\paddle\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mklml\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mkldnn\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\glog\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\gflags\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\protobuf\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\xxhash\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\opencv;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\paddle\lib\paddle_inference.lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mklml\lib\mklml.lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mklml\lib\libiomp5md.lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mkldnn\lib\mkldnn.lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\glog\lib\glog.lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\gflags\lib\gflags_static.lib;D:\EdgeDownLoad\F9C8B0_OCR_Demo\OCR_Demo\OCR_Demo\3rdparty\paddle_inference_install_dir\third_party\install\protobuf\lib\libprotobuf.lib;D:\EdgeDownLoad\F9C8B0_OCR_Demo\OCR_Demo\OCR_Demo\3rdparty\paddle_inference_install_dir\third_party\install\xxhash\lib\xxhash.lib;opencv_world440.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebugInfo|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\paddle\lib\paddle_inference.lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mklml\lib\mklml.lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mklml\lib\libiomp5md.lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mkldnn\lib\mkldnn.lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\glog\lib\glog.lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\gflags\lib\gflags_static.lib;D:\EdgeDownLoad\F9C8B0_OCR_Demo\OCR_Demo\OCR_Demo\3rdparty\paddle_inference_install_dir\third_party\install\protobuf\lib\libprotobuf.lib;D:\EdgeDownLoad\F9C8B0_OCR_Demo\OCR_Demo\OCR_Demo\3rdparty\paddle_inference_install_dir\third_party\install\xxhash\lib\xxhash.lib;opencv_world440.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\paddle\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mklml\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mkldnn\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\glog\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\gflags\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\protobuf\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\xxhash\lib;D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\3rdparty\opencv;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.\..\3rdparty\paddle_inference_install_dir\paddle\fluid\inference;.\..\3rdparty\paddle_inference_install_dir\paddle\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\protobuf\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\glog\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\gflags\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\xxhash\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\zlib\include;.\..\3rdparty\paddle_inference_install_dir\third_party\boost;.\..\3rdparty\paddle_inference_install_dir\third_party\eigen3;.\..\3rdparty\paddle_inference_install_dir\third_party\install\mklml\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\mkldnn\include;.\..\3rdparty\opencv\include;debug;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Link>
+      <AdditionalDependencies>E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\paddle\lib\paddle_inference.lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mklml\lib\mklml.lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mklml\lib\libiomp5md.lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mkldnn\lib\mkldnn.lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\glog\lib\glog.lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\gflags\lib\gflags_static.lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\protobuf\lib\libprotobuf.lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\xxhash\lib\xxhash.lib;opencv_world440.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\opencv\include\opencv2;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\paddle\lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mklml\lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\mkldnn\lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\glog\lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\gflags\lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\protobuf\lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\paddle_inference_install_dir\third_party\install\xxhash\lib;E:\BaiduNetdiskDownload\OCRFastPoint\OCRFastPoint\3rdparty\opencv;E:\BaiduNetdiskDownload\OCRFastPoint\openssl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.\..\3rdparty\paddle_inference_install_dir\paddle\fluid\inference;.\..\3rdparty\paddle_inference_install_dir\paddle\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\protobuf\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\glog\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\gflags\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\xxhash\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\zlib\include;.\..\3rdparty\paddle_inference_install_dir\third_party\boost;.\..\3rdparty\paddle_inference_install_dir\third_party\eigen3;.\..\3rdparty\paddle_inference_install_dir\third_party\install\mklml\include;.\..\3rdparty\paddle_inference_install_dir\third_party\install\mkldnn\include;.\..\3rdparty\opencv\include;.\..\PaddleOCR\include;debug;/include;.\..\openssl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebugInfo|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ApplicationInstance.cpp" />
+    <ClCompile Include="DataHelper.cpp" />
+    <ClCompile Include="GraphicItem.cpp" />
+    <ClCompile Include="GraphicScene.cpp" />
+    <ClCompile Include="GraphicView.cpp" />
+    <ClCompile Include="InitData.cpp" />
+    <ClCompile Include="LedExcel.cpp" />
+    <ClCompile Include="LocalPeer.cpp" />
+    <ClCompile Include="LockedFile.cpp" />
+    <ClCompile Include="PaddleOCR\src\clipper.cpp" />
+    <ClCompile Include="PaddleOCR\src\config.cpp" />
+    <ClCompile Include="PaddleOCR\src\ocr_cls.cpp" />
+    <ClCompile Include="PaddleOCR\src\ocr_det.cpp" />
+    <ClCompile Include="PaddleOCR\src\ocr_rec.cpp" />
+    <ClCompile Include="PaddleOCR\src\postprocess_op.cpp" />
+    <ClCompile Include="PaddleOCR\src\preprocess_op.cpp" />
+    <ClCompile Include="PaddleOCR\src\utility.cpp" />
+    <ClCompile Include="ScreenWidget\screen.cpp" />
+    <ClCompile Include="ScreenWidget\screenwidget.cpp" />
+    <ClCompile Include="setting.cpp" />
+    <ClCompile Include="SqlService.cpp" />
+    <ClCompile Include="TestTreeview.cpp" />
+    <QtRcc Include="OCRFastPoint.qrc" />
+    <QtUic Include="OCRFastPoint.ui" />
+    <QtMoc Include="OCRFastPoint.h" />
+    <ClCompile Include="OCRFastPoint.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\QtExercise\Learn\QtExercise\msv_ocr\OCRFastPoint\OCRFastPoint\PaddleOCR\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="RecordLight.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="TestTreeview.h" />
+    <QtMoc Include="ApplicationInstance.h" />
+    <QtMoc Include="LocalPeer.h" />
+    <QtMoc Include="Building.h" />
+    <QtMoc Include="Area.h" />
+    <ClInclude Include="DataHelper.h" />
+    <QtMoc Include="Floor.h" />
+    <QtMoc Include="Led.h" />
+    <ClInclude Include="GraphicItem.h" />
+    <QtMoc Include="GraphicScene.h" />
+    <ClInclude Include="GraphicView.h" />
+    <ClInclude Include="InitData.h" />
+    <ClInclude Include="LedExcel.h" />
+    <ClInclude Include="LockedFile.h" />
+    <ClInclude Include="PaddleOCR\include\clipper.h" />
+    <ClInclude Include="PaddleOCR\include\config.h" />
+    <ClInclude Include="PaddleOCR\include\ocr_cls.h" />
+    <ClInclude Include="PaddleOCR\include\ocr_det.h" />
+    <ClInclude Include="PaddleOCR\include\ocr_rec.h" />
+    <ClInclude Include="PaddleOCR\include\postprocess_op.h" />
+    <ClInclude Include="PaddleOCR\include\preprocess_op.h" />
+    <ClInclude Include="PaddleOCR\include\utility.h" />
+    <ClInclude Include="ScreenWidget\screen.h" />
+    <QtMoc Include="ScreenWidget\screenwidget.h" />
+    <QtMoc Include="setting.h" />
+    <ClInclude Include="SqlService.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

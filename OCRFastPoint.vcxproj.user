@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerEnvironment>$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtTouchProperty>
+    </QtTouchProperty>
+    <QtLastBackgroundBuild>2026-04-14T08:20:39.3235177Z</QtLastBackgroundBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtTouchProperty>
+    </QtTouchProperty>
+    <QtLastBackgroundBuild>2026-04-14T08:20:39.4590274Z</QtLastBackgroundBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="QtSettings">
+    <QtTouchProperty>
+    </QtTouchProperty>
+    <QtLastBackgroundBuild>2026-04-14T08:20:38.9497289Z</QtLastBackgroundBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebugInfo|x64'" Label="QtSettings">
+    <QtTouchProperty>
+    </QtTouchProperty>
+    <QtLastBackgroundBuild>2026-04-14T08:20:39.0891350Z</QtLastBackgroundBuild>
+  </PropertyGroup>
+</Project>

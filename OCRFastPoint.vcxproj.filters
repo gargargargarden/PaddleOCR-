@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="OCRFastPoint.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="OCRFastPoint.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="OCRFastPoint.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="OCRFastPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SqlService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalPeer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationInstance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LockedFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTreeview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InitData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenWidget\screen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenWidget\screenwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaddleOCR\src\ocr_rec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaddleOCR\src\clipper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaddleOCR\src\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaddleOCR\src\ocr_cls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaddleOCR\src\ocr_det.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaddleOCR\src\postprocess_op.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaddleOCR\src\preprocess_op.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaddleOCR\src\utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LedExcel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ApplicationInstance.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="LocalPeer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Led.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Floor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Building.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="TestTreeview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Area.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="GraphicScene.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ScreenWidget\screenwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="setting.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LockedFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SqlService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InitData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenWidget\screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaddleOCR\include\ocr_rec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaddleOCR\include\clipper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaddleOCR\include\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaddleOCR\include\ocr_cls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaddleOCR\include\ocr_det.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaddleOCR\include\postprocess_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaddleOCR\include\preprocess_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaddleOCR\include\utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LedExcel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="RecordLight.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>
