@@ -7,7 +7,6 @@ Visual studio 2019 + QT5.15.2（msvc）
 
 #### 通过网盘分享的文件：model+3rdparty
 链接: https://pan.baidu.com/s/1GgFHTQv6OcLdap_zM2v59w?pwd=dd5t 提取码: dd5t 
---来自百度网盘超级会员v6的分享
 
 #### 二、模型准备 (PaddleOCR)
 
